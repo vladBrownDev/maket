@@ -1,0 +1,665 @@
+@font-face {
+  font-family: 'NexaBold';
+  src: url('nexabold.ttf');
+}
+@font-face {
+  font-family: 'Arial-BoldMT';
+  src: url('Arial-BoldMT.otf');
+}
+body {
+  width: 1449px;
+  height: 3709px;
+  background: #EBEBEB;
+  overflow-x: hidden ;
+}
+.upstring {
+  background-color: #373737;
+  padding-left: 308px;
+  width: 100vw;
+}
+.g {
+  width: 81px;
+  height: 67px;
+  font-family: 'NexaBold', AdobeInvisFont, MyriadPro-Regular;
+  background-color: #F26C4F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.g div:nth-child(1) {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: -7px;
+  color: white;
+}
+.g div:nth-child(2) {
+  width: 30px;
+  height: 30px;
+  background-color: #F26C4F;
+  position: absolute;
+  transform: rotate(45deg);
+  left: 369px;
+}
+.good-text {
+  color: white;
+  font-size: 19px;
+  position: relative;
+  left: 100px;
+  bottom: 15px;
+}
+.downstring {
+  background-color: #474747;
+  padding-left: 308px;
+  height: 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100vw;
+}
+.select {
+  width: 401px;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  display: flex;
+  justify-content: space-around;
+}
+.select a {
+  border-right: 1px solid white;
+  padding-right: 15px;
+  color: white;
+}
+.select a:nth-child(1)::before {
+  display: block;
+  content: "";
+  width: 60px;
+  height: 40px;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+}
+.select a:nth-child(2)::before {
+  display: block;
+  content: "";
+  width: 62px;
+  height: 40px;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+}
+.select a:nth-child(3)::before {
+  display: block;
+  content: "";
+  width: 34px;
+  height: 40px;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+}
+.select a:nth-child(4)::before {
+  display: block;
+  content: "";
+  width: 53px;
+  height: 40px;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+}
+.select a:nth-child(5)::before {
+  display: block;
+  content: "";
+  width: 56px;
+  height: 40px;
+  border-bottom: 1px solid transparent;
+  position: absolute;
+}
+.select a:hover::before {
+  border-bottom: 3px solid #F26C4F;
+}
+.select a:nth-child(5) {
+  border-right: none;
+  padding-right: 15px;
+}
+main {
+  padding-left: 300px;
+}
+#search {
+  width: 301px;
+  height: 47px;
+  margin-top: 20px;
+  padding-left: 20px;
+  border: none;
+}
+#search::-webkit-input-placeholder {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 12px;
+}
+#label {
+  position: relative;
+  height: 23px;
+  width: 500px;
+  background-image: url(images/clock.png);
+  background-repeat: no-repeat;
+  top: 34px;
+  left: -35px;
+}
+#social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#upper-div {
+  display: flex;
+  justify-content: space-between;
+}
+#social span {
+  width: 10%;
+  margin-right: 50px;
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  color: #8F8F8F;
+}
+#social span:nth-child(2) {
+  padding-right: 20px;
+}
+#social span:nth-child(4) {
+  margin-right: 0;
+}
+#social span:nth-child(1)::before {
+  display: block;
+  width: 30px;
+  height: 22px;
+  content: "";
+  background-image: url(images/twitter.svg);
+  position: relative;
+  background-size: 100%;
+  right: 40px;
+  top: 20px;
+}
+#social span:nth-child(2)::before {
+  display: block;
+  width: 30px;
+  height: 22px;
+  content: "";
+  background-image: url(images/facebook.svg);
+  position: relative;
+  background-size: 36%;
+  right: 23px;
+  top: 20px;
+  background-repeat: no-repeat;
+}
+#social span:nth-child(3)::before {
+  display: block;
+  width: 30px;
+  height: 22px;
+  content: "";
+  background-image: url(images/rss.svg);
+  position: relative;
+  background-size: 67%;
+  right: 31px;
+  top: 20px;
+  background-repeat: no-repeat;
+}
+#social span:nth-child(4)::before {
+  display: block;
+  width: 30px;
+  height: 22px;
+  content: "";
+  background-image: url(images/mail.svg);
+  position: relative;
+  background-size: 100%;
+  right: 40px;
+  top: 20px;
+}
+#bridge {
+  margin-top: 10px;
+  display: flex;
+}
+#img-bridge {
+  width: 69.5%;
+  background-image: url(images/Bridge.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 490px;
+  border-right: 9px solid #F26C4F;
+}
+#text-bridge {
+  background-color: #373737;
+  width: 30.5%;
+  display: flex ;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-left: 30px;
+  max-height: 495px;
+}
+#text-bridge h2 {
+  max-width: 173px;
+  padding-top: 10px;
+}
+.tri {
+  width: 0px;
+  height: 0px;
+  border-right: 15px solid #F26C4F;
+  border-top: 15px solid #F26C4F;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid transparent;
+  position: relative;
+  transform: rotate(45deg);
+  left: -48px;
+  top: 46px;
+}
+.tri + h2 {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  color: white;
+  font-size: 18px;
+}
+.tri + h2 + p {
+  color: #A7A7A7;
+  max-width: 220px;
+}
+#text-bridge div:nth-child(2) {
+  font-family: ArialMT, AdobeInvisFont, MyriadPro-Regular;
+  color: #A7A7A7;
+  align-self: flex-end;
+  padding-right: 60px;
+}
+#text-bridge div:nth-child(2)::before {
+  display: block;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url(images/clockblack.svg);
+  position: relative;
+  background-size: 100%;
+  left: -25px;
+  top: 18px;
+}
+#text-bridge div p {
+  font-size: 17px;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  padding-left: 10%;
+}
+#text-bridge div h2 {
+  padding-left: 10%;
+}
+#img-bridge::after {
+  content: "Google Inc. image caption to go here";
+  position: relative;
+  top: 92.2%;
+  left: 50.4%;
+  background-color: rgba(31, 32, 39, 0.8);
+  padding: 20px;
+  padding-right: 100px;
+  color: white;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+}
+#sections {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  height: 460px;
+}
+#sections section {
+  width: 32.2%;
+  background: white;
+  height: 100%;
+}
+#sections section img {
+  width: 100%;
+}
+#sections div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 40px;
+  color: #4F4F4F;
+}
+#sections div h1 {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+}
+#sections div .par {
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+}
+#sections div .tri {
+  padding: 0px;
+  width: 0px;
+  height: 0px;
+  border-right: 40px solid #F26C4F;
+  border-top: 40px solid #F26C4F;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  position: relative;
+  transform: rotate(0deg);
+  left: 250px;
+  top: -403px;
+}
+#sections div .tri p {
+  font-size: 40px;
+  color: white;
+  position: relative;
+  top: -73px;
+  right: -3px;
+}
+#middle {
+  display: flex;
+  justify-content: space-between;
+  height: 1020px;
+}
+#middle #sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1200px;
+}
+#middle #sidebar .underside {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 60px;
+  padding-left: 20px;
+}
+#middle #sidebar .underside:nth-child(2)::after {
+  content: '';
+  width: 350px;
+  height: 2px;
+  border-bottom: 1px solid #474747;
+  opacity: 0.4;
+  margin-top: 40px;
+}
+#middle #sidebar .underside h1 {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 25px;
+  color: #474747;
+}
+#middle #sidebar .underside div {
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  color: #BDBDBD;
+  font-size: 18px;
+  margin-top: 20px;
+}
+#middle #sidebar #fstundside {
+  margin-top: 60px;
+}
+#middle #sidebar #underlinks {
+  width: 100%;
+}
+#middle #sidebar #underlinks section {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  border-left: 6px solid #CACACA;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+#middle #sidebar #underlinks section * {
+  margin-left: 10px;
+}
+#middle #sidebar #underlinks section p {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+}
+#middle #sidebar #underlinks section div {
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  color: #A7A7A7;
+}
+#middle #sidebar #side {
+  background-color: #373737;
+  height: 600px;
+  width: 370px;
+  display: block;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+#middle #sidebar #side #underimg {
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  bottom: 70px;
+}
+#middle #sidebar #side #underimg h1 {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 25px;
+  color: white;
+  width: 200px;
+}
+#middle #sidebar #side #underimg div {
+  color: white;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+}
+#middle #sidebar #side .img {
+  background-image: url(images/side.png);
+  height: 50%;
+  width: 100%;
+}
+#middle #sidebar #side .tri {
+  width: 0px;
+  height: 0px;
+  border-right: 40px solid #F26C4F;
+  border-top: 40px solid #F26C4F;
+  border-bottom: 40px solid transparent;
+  border-left: 40px solid transparent;
+  transform: rotate(0deg);
+  position: relative;
+  top: -290px;
+  left: 290px;
+}
+#middle #sidebar #side .tri p {
+  position: relative;
+  left: 5px;
+  top: -70px;
+  font-size: 40px;
+  color: white;
+}
+#middle #column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 66%;
+  height: 1000px;
+}
+#middle #column .lil {
+  margin-top: 10px;
+}
+#middle #column .lil div:nth-child(2) {
+  width: 285px;
+}
+#middle #column .lil div:nth-child(2) span {
+  padding-right: 34px;
+}
+#middle #column section {
+  margin-top: 20px;
+  background-color: white;
+  margin-top: 10px;
+  padding: 10px 20px 30px 50px;
+  border-left: 6px solid #F26C4F;
+}
+#middle #column section div:nth-child(2) {
+  font-family: Tahoma, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 12px;
+}
+#middle #column section div {
+  color: #AFAFAF;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  width: 427px;
+}
+#middle #column section div span {
+  border-right: 1px solid #AFAFAF;
+  padding-right: 22px;
+}
+#middle #column section div span:last-child {
+  border: none;
+}
+#middle #column section div span {
+  display: inline-block;
+}
+#middle #column section div .img {
+  width: 53px;
+  height: 14px;
+  background-image: url("images/star.svg");
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#middle #column section div .img2 {
+  width: 44px;
+  height: 14px;
+  background-image: url("images/star.svg");
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+#middle #column section div:nth-child(1) {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 20px;
+  color: #474747;
+  width: 100%;
+  display: inline-block;
+}
+#middle #column section div:last-child {
+  width: 100%;
+}
+#middle #column section:hover {
+  background-color: #F26C4F;
+  color: white;
+}
+#middle #column section:hover div:nth-child(1):before {
+  content: "";
+  background-image: url(images/movietape.svg);
+  height: 21px;
+  width: 36px;
+  position: relative;
+  left: -100px;
+}
+#middle #column section:hover div {
+  color: white;
+}
+#middle #column section:hover div .img,
+#middle #column section:hover div .img2 {
+  background-image: url(images/whitestar.svg);
+}
+#middle #column section:hover span {
+  border-right: 1px solid white;
+}
+#middle #column section:hover:before {
+  content: "";
+  background-image: url(images/movietape.svg);
+  width: 31px;
+  height: 26px;
+}
+#tran {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 66%;
+  height: 100px;
+}
+#tran img {
+  width: 20px;
+  height: 20px;
+}
+#tran h1 {
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 14px;
+  color: #BDBDBD;
+}
+#downsections {
+  width: 66%;
+}
+#downsections section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+}
+#downsections section * {
+  margin-top: 20px;
+}
+#downsections section h1 {
+  color: #707070;
+  font-size: 32px;
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+}
+#downsections section p {
+  color: #707070;
+  font-family: Arial-BoldMT, AdobeInvisFont, MyriadPro-Regular;
+  font-size: 17px;
+}
+#downsections #underSection {
+  height: 45px;
+  background-color: #EFEFEF;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  font-family: ArialMT, AdobeInvisFont, MyriadPro-Regular;
+  color: #A2A2A2;
+  font-size: 14px;
+  margin-top: 2px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+#downsections #underSection div:nth-child(1) {
+  margin-left: 20px;
+}
+#downsections #underSection div:nth-child(2) {
+  margin-right: 20px;
+}
+#downsections section:nth-child(3) {
+  padding: 0;
+  margin-top: 30px;
+}
+#downsections section:nth-child(3) img {
+  height: 50%;
+  margin: 0;
+}
+#downsections section:nth-child(3) h1 {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 27px;
+}
+#downsections section:nth-child(3) p {
+  padding-left: 75px;
+  padding-right: 75px;
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+  padding-bottom: 40px;
+}
+#downsections section:nth-child(4) {
+  margin-top: 30px;
+}
+#downsections section:nth-child(4) p {
+  font-family: Arial, AdobeInvisFont, MyriadPro-Regular;
+}
+footer {
+  background-color: #373737;
+  width: 100vw;
+  margin-left: -308px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 308px;
+  margin-top: 300px;
+}
+footer * {
+  margin-top: 10px;
+}
+footer div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+}
+footer div:nth-child(1) a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: Arial, Helvetica-Bold, AdobeInvisFont, MyriadPro-Regular;
+}
+footer div:nth-child(2) {
+  font-family: Arial, Helvetica-Bold, AdobeInvisFont, MyriadPro-Regular;
+  width: 65%;
+  color: #7E7E7E;
+}
